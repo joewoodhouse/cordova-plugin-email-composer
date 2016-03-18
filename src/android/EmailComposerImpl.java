@@ -515,7 +515,7 @@ public class EmailComposerImpl {
 
         try {
             for (Account account : am.getAccounts()) {
-                if (account.type.endsWith("mail")) {
+                if (account.type.endsWith("mail") || account.type.endsWith("com.google")) {
                     return true;
                 }
             }
